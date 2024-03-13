@@ -1,0 +1,1 @@
+You can calculate your new capital at the end of a specified period by entering your income and current capital. Simply open the index.html file and input your details!

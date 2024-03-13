@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            text-align: center;
+        }
+        #calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ddd;
+        }
+        td button {
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        td button:hover {
+            background-color: #0056b3;
+        }
+        #result_table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Enter your initial capital, monthly fixed income, monthly interest expectation, and duration for your earnings plan:</h3>
+    <div id="calculator">
+        <table>
+            <tr>
+                <td>Capital (Dollars)</td>
+                <td><input type="number" id="capital_id"></td>
+            </tr>
+            <tr>
+                <td>Income (Dollars)</td>
+                <td><input type="number" id="income_id"></td>
+            </tr>
+            <tr>
+                <td>Interest (%)</td>
+                <td><input type="number" id="interest_id"></td>
+            </tr>
+            <tr>
+                <td>Duration (Months)</td>
+                <td><input type="number" id="duration_id"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="calculate_button" onclick="calculate()">Calculate</button></td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center;" id="result_table"></div>
+
+    <script>
+        function calculate() {
+            var capital = parseFloat(document.getElementById("capital_id").value);
+            var income = parseFloat(document.getElementById("income_id").value);
+            var interest = parseFloat(document.getElementById("interest_id").value);
+            var duration = parseInt(document.getElementById("duration_id").value);
+
+            var table = "<table border=\"1\"><tr style=\"background-color:orange;\"><th>Month</th><th>Compound Earnings (%" + interest + ")</th><th>Fixed Income</th><th>Capital</th></tr>";
+            for (var i = 1; i <= duration; i++) {
+                var temp = capital * ((interest) / 100);
+                table += "<tr><td>" + i + "</td><td>" + temp.toFixed(2) + "</td><td>" + income + "</td><td>" + (capital + temp + income).toFixed(2) + "</td></tr>";
+                capital += temp + income;
+            }
+            table += "</table>";
+            document.getElementById("result_table").innerHTML = table;
+        }
+    </script>
+</body>
+</html>
