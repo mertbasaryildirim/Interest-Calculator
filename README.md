@@ -1,6 +1,6 @@
 <div align="center">
    <h1> Interest Calculator </h1>
-<div>
+</div>
 
 ## Overview
 The **Interest Calculator** is a web-based tool for calculating compound interest on an initial capital amount and fixed income over a specified duration. It is designed to help individuals or businesses understand the growth of their investments or savings over time using the power of compounding.
