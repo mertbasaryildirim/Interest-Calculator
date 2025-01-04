@@ -1,4 +1,6 @@
-# Interest Calculator
+<div align="center">
+   <h1> Interest Calculator </h1>
+<div>
 
 ## Overview
 The **Interest Calculator** is a web-based tool for calculating compound interest on an initial capital amount and fixed income over a specified duration. It is designed to help individuals or businesses understand the growth of their investments or savings over time using the power of compounding.
@@ -21,7 +23,9 @@ This tool simplifies the process by calculating compound earnings month by month
 
 ## Linear Growth vs Exponential Growth
 
-<img src="./readme_src/growth_comparison.png" alt="growth_comparison">
+<div align="center">
+   <img src="./readme_src/growth_comparison.png" alt="growth_comparison">
+</div>
 
 To better understand compound interest, it's helpful to compare it with linear growth. Linear growth adds a fixed amount over time, while exponential growth increases at an accelerating rate as interest compounds. In the graph below, you can see how exponential growth (green line) surpasses linear growth (blue line) over time.
 
@@ -34,12 +38,16 @@ To better understand compound interest, it's helpful to compare it with linear g
 ### Input Form
 Below is the input form where users enter the required values to calculate the compound interest:
 
-![Input Form](./readme_src/image1.png)
+<div align="center">
+    <img src="./readme_src/image1.png" alt="example_input">
+</div>
 
 ### Detailed Results Table
 After clicking "Calculate," a detailed breakdown of the earnings and capital is displayed:
 
-![Results Table](./readme_src/image2.png)
+<div align="center">
+    <img src="./readme_src/image2.png" alt="example_output">
+</div>
 
 ## How to Use
 1. Clone or download the repository.
