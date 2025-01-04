@@ -61,7 +61,7 @@ No installation is required. This project is a single-page static HTML file. Sim
 - **JavaScript:** For calculations and dynamic updates.
 
 ## Contributing
-Contributions are welcome! If you have any suggestions or improvements, please open an issue or create a pull request.
+This project is not open for contributions. If you wish to make any additions or changes, please fork the repository and maintain the changes in your own repositories.
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
