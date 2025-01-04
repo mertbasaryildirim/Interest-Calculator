@@ -24,7 +24,7 @@ This tool simplifies the process by calculating compound earnings month by month
 ## Linear Growth vs Exponential Growth
 
 <div align="center">
-   <img src="./readme_src/growth_comparison.png" alt="growth_comparison">
+   <img src="./readme_src/growth_comparison.png" alt="growth_comparison" width=400>
 </div>
 
 To better understand compound interest, it's helpful to compare it with linear growth. Linear growth adds a fixed amount over time, while exponential growth increases at an accelerating rate as interest compounds. In the graph below, you can see how exponential growth (green line) surpasses linear growth (blue line) over time.
@@ -39,7 +39,7 @@ To better understand compound interest, it's helpful to compare it with linear g
 Below is the input form where users enter the required values to calculate the compound interest:
 
 <div align="center">
-    <img src="./readme_src/image1.png" alt="example_input">
+    <img src="./readme_src/image1.png" alt="example_input" width=400>
 </div>
 
 ### Detailed Results Table
